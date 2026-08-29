@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        YOLO - Nhận diện linh kiện
+    </title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .camera-box {
+            margin-top: 30px;
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 16px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 10px;
+        }
+
+        .status {
+            margin-top: 15px;
+            color: #22c55e;
+            font-size: 18px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            Nhận diện linh kiện bằng YOLO
+        </h1>
+
+        <div class="camera-box">
+
+            <img
+                src="{{ url_for('video_feed') }}"
+                alt="Camera YOLO"
+            >
+
+            <div class="status">
+                ● Camera đang hoạt động
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
